@@ -1,3 +1,7 @@
-# duckyhq.com
+# Website
 
-A website including all projects of DuckyHQ, and documentation for them.
+KOR HQ website built with Astro, KOR UI and Svelte.
+
+## Style
+
+App launcher styled home page with each item opening a sheet.
