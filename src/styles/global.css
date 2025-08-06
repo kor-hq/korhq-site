@@ -1,1 +1,2 @@
 @import "@korhq/ui/tailwind.css";
+@source "../../node_modules/@korhq/ui/dist/components/ui";
