@@ -1,0 +1,26 @@
+---
+export interface Props {
+    label: string;
+    href?: string;
+    class?: string;
+}
+
+const { label, href, class: className } = Astro.props;
+
+const Component = href ? "a" : "div";
+---
+
+<Component
+    href={href}
+    class:list={[
+        "border border-stroke rounded-12 flex flex-col items-center justify-center gap-2 hover:brightness-110 transition-[filter] duration-200 ease-out group cursor-pointer",
+        className,
+    ]}
+>
+    <div
+        class="bg-surface-primary border border-stroke shadow-glass rounded-20 flex items-center justify-center size-18 group-hover:scale-105 group-active:scale-[95%] duration-200 ease-out"
+    >
+        <slot />
+    </div>
+    <p class="body">{label}</p>
+</Component>
