@@ -1,15 +1,18 @@
 <script>
     import { Button } from "@korhq/ui/button";
     import IconHeart from "phosphor-icons-svelte/IconHeartRegular.svelte";
+    import { LogoKOR } from "@korhq/ui/logo-kor";
 </script>
 
 <nav class="w-screen h-fit p-1.5 flex justify-between sticky top-0">
     <div class="flex gap-1.5 h-9">
-        <div
-            class="bg-surface-primary border border-stroke shadow-glass backdrop-blur-raised-1 px-4 py-1.5 rounded-full"
+        <a
+            href="/"
+            class="bg-surface-primary flex items-center gap-1.5 border border-stroke shadow-glass backdrop-blur-raised-1 px-4 py-1.5 rounded-full hover:brightness-110 active:scale-[98%] transition-[filter,scale] duration-150 ease-out"
         >
-            <a href="/" class="body">KORHQ</a>
-        </div>
+            <LogoKOR />
+            <p class="body">KORHQ</p>
+        </a>
         <div
             class="bg-surface-primary border border-stroke shadow-glass backdrop-blur-raised-1 px-4 py-1.5 rounded-full"
         >

@@ -1,8 +1,111 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import { Button } from "@korhq/ui/button";
+import { Icon } from "astro-icon/components";
 ---
 
 <Layout title="Home">
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    <main class="p-8 pt-4 flex flex-col gap-2">
+        <h3 class="title-3">Projects</h3>
+        <div class="grid grid-cols-5 aspect-[5/1] w-full h-auto gap-1.5">
+            <div
+                class="border border-stroke rounded-12 flex flex-col items-center justify-center gap-2 hover:brightness-110 transition-[filter] duration-200 ease-out group cursor-pointer"
+            >
+                <div
+                    class="bg-surface-primary border border-stroke shadow-glass rounded-20 flex items-center justify-center size-18 group-active:scale-[98%] duration-200 ease-out"
+                >
+                </div>
+                <p class="body">Bibleio</p>
+            </div>
+            <div
+                class="border border-stroke rounded-12 flex flex-col items-center justify-center gap-2 hover:brightness-110 transition-[filter] duration-200 ease-out group cursor-pointer"
+            >
+                <div
+                    class="bg-surface-primary border border-stroke shadow-glass rounded-20 flex items-center justify-center size-18 group-active:scale-[98%] duration-200 ease-out"
+                >
+                </div>
+                <p class="body">KORUI</p>
+            </div>
+            <div
+                class="border border-stroke rounded-12 flex flex-col items-center justify-center gap-2 hover:brightness-110 transition-[filter] duration-200 ease-out group cursor-pointer"
+            >
+                <div
+                    class="bg-surface-primary border border-stroke shadow-glass rounded-20 flex items-center justify-center size-18 group-active:scale-[98%] duration-200 ease-out"
+                >
+                </div>
+                <p class="body">unDocs</p>
+            </div>
+            <div
+                class="border border-stroke rounded-12 flex flex-col items-center justify-center gap-2 hover:brightness-110 transition-[filter] duration-200 ease-out group cursor-pointer"
+            >
+                <div
+                    class="bg-surface-primary border border-stroke shadow-glass rounded-20 flex items-center justify-center size-18 group-active:scale-[98%] duration-200 ease-out"
+                >
+                </div>
+                <p class="body">Alive</p>
+            </div>
+            <div
+                class="border border-stroke rounded-12 flex flex-col items-center justify-center gap-2 hover:brightness-110 transition-[filter] duration-200 ease-out group cursor-pointer"
+            >
+                <div
+                    class="bg-surface-primary border border-stroke shadow-glass rounded-20 flex items-center justify-center size-18 group-active:scale-[98%] duration-200 ease-out"
+                >
+                </div>
+                <p class="body">Slate</p>
+            </div>
+        </div>
+        <h3 class="title-3">Handbook</h3>
+        <div class="grid grid-cols-5 aspect-[5/1] w-full h-auto gap-1.5">
+            <div
+                class="border border-stroke rounded-12 flex flex-col items-center justify-center gap-2 hover:brightness-110 transition-[filter] duration-200 ease-out group cursor-pointer"
+            >
+                <div
+                    class="bg-surface-primary border border-stroke shadow-glass rounded-20 flex items-center justify-center size-18 group-active:scale-[98%] duration-200 ease-out"
+                >
+                    <Icon name="ph:info-fill" class="size-8" />
+                </div>
+                <p class="body">About</p>
+            </div>
+            <div
+                class="border border-stroke rounded-12 flex flex-col items-center justify-center gap-2 hover:brightness-110 transition-[filter] duration-200 ease-out group cursor-pointer"
+            >
+                <div
+                    class="bg-surface-primary border border-stroke shadow-glass rounded-20 flex items-center justify-center size-18 group-active:scale-[98%] duration-200 ease-out"
+                >
+                    <Icon name="ph:paint-brush-household-fill" class="size-8" />
+                </div>
+                <p class="body">Brand & Design</p>
+            </div>
+            <div
+                class="border border-stroke rounded-12 flex flex-col items-center justify-center gap-2 hover:brightness-110 transition-[filter] duration-200 ease-out group cursor-pointer"
+            >
+                <div
+                    class="bg-surface-primary border border-stroke shadow-glass rounded-20 flex items-center justify-center size-18 group-active:scale-[98%] duration-200 ease-out"
+                >
+                    <Icon name="ph:brackets-curly-fill" class="size-8" />
+                </div>
+                <p class="body">Engineering</p>
+            </div>
+            <div
+                class="border border-stroke rounded-12 flex flex-col items-center justify-center gap-2 hover:brightness-110 transition-[filter] duration-200 ease-out group cursor-pointer"
+            >
+                <div
+                    class="bg-surface-primary border border-stroke shadow-glass rounded-20 flex items-center justify-center size-18 group-active:scale-[98%] duration-200 ease-out"
+                >
+                    <Icon name="ph:heart-fill" class="size-8" />
+                </div>
+                <p class="body">Donate</p>
+            </div>
+            <div
+                class="border border-stroke rounded-12 flex flex-col items-center justify-center gap-2 hover:brightness-110 transition-[filter] duration-200 ease-out group cursor-pointer"
+            >
+                <div
+                    class="bg-surface-primary border border-stroke shadow-glass rounded-20 flex items-center justify-center size-18 group-active:scale-[98%] duration-200 ease-out"
+                >
+                    <Icon name="ph:paper-plane-tilt-fill" class="size-8" />
+                </div>
+                <p class="body">Contact</p>
+            </div>
+        </div>
+    </main>
 </Layout>
