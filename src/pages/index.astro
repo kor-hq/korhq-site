@@ -3,17 +3,43 @@ import Layout from "../layouts/Layout.astro";
 import { Button } from "@korhq/ui/button";
 import { Icon } from "astro-icon/components";
 import ProjectCard from "../components/ProjectCard.astro";
+
+import { LogoBibleio } from "@korhq/ui/logo-bibleio";
+import { LogoKorUI } from "@korhq/ui/logo-korui";
+import { LogoUnDocs } from "@korhq/ui/logo-undocs";
+import { LogoAlive } from "@korhq/ui/logo-alive";
 ---
 
 <Layout title="Home">
     <main class="p-8 pt-4 flex flex-col gap-2">
         <h3 class="title-3">Projects</h3>
         <div class="grid grid-cols-5 aspect-[5/1] w-full h-auto gap-1.5">
-            <ProjectCard label="Bibleio" />
-            <ProjectCard label="KORUI" />
-            <ProjectCard label="unDocs" />
-            <ProjectCard label="Alive" />
-            <ProjectCard label="Slate" />
+            <ProjectCard label="Bibleio">
+                <LogoBibleio width={36} height={36} />
+            </ProjectCard>
+            <ProjectCard label="KORUI">
+                <LogoKorUI width={36} height={36} />
+            </ProjectCard>
+            <ProjectCard label="unDocs">
+                <LogoUnDocs width={36} height={36} />
+            </ProjectCard>
+            <ProjectCard label="Alive">
+                <LogoAlive width={36} height={36} />
+            </ProjectCard>
+            <ProjectCard label="Slate">
+                <svg
+                    width="36"
+                    height="37"
+                    viewBox="0 0 36 37"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="fill-text"
+                >
+                    <path
+                        d="M31.5 9.5C33.9853 9.5 36 7.48528 36 5C36 2.51472 33.9853 0.5 31.5 0.5H12.1687C10.8839 0.5 10.2415 0.5 9.64248 0.668951C9.30193 0.764998 8.97389 0.900875 8.66516 1.07377C8.1221 1.3779 7.66786 1.83214 6.75937 2.74063L5.40937 4.09063C3.32617 6.17383 2.28457 7.21543 1.9883 8.4495C1.82252 9.14002 1.82252 9.85998 1.9883 10.5505C2.28457 11.7846 3.32617 12.8262 5.40937 14.9094L8.06802 17.568C8.66476 18.1648 9.47411 18.5 10.318 18.5H18L22.5 23C24.1606 24.6606 22.9845 27.5 20.636 27.5H4.5C2.01472 27.5 0 29.5147 0 32C0 34.4853 2.01472 36.5 4.5 36.5H23.8313C25.1161 36.5 25.7585 36.5 26.3575 36.331C26.6981 36.235 27.0261 36.0991 27.3348 35.9262C27.8779 35.6221 28.3321 35.1679 29.2406 34.2594L30.5906 32.9094C32.6738 30.8262 33.7154 29.7846 34.0117 28.5505C34.1775 27.86 34.1775 27.14 34.0117 26.4495C33.7154 25.2154 32.6738 24.1738 30.5906 22.0906L27.932 19.432C27.3352 18.8352 26.5259 18.5 25.682 18.5H18L13.5 14C11.8394 12.3394 13.0155 9.5 15.364 9.5H31.5Z"
+                        fill="currentColor"></path>
+                </svg>
+            </ProjectCard>
         </div>
         <h3 class="title-3">Handbook</h3>
         <div class="grid grid-cols-5 aspect-[5/1] w-full h-auto gap-1.5">
