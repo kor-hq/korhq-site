@@ -1,51 +1,43 @@
 <script>
-    import { Button } from "@korhq/ui/button";
-    import IconHeart from "phosphor-icons-svelte/IconHeartRegular.svelte";
-    import { LogoKOR } from "@korhq/ui/logo-kor";
+  import { Button } from "@korhq/ui/button";
+  import IconHeart from "phosphor-icons-svelte/IconHeartRegular.svelte";
+  import { LogoKOR } from "@korhq/ui/logo-kor";
 </script>
 
-<nav class="w-screen h-fit p-1.5 flex justify-between sticky top-0">
-    <div class="flex gap-1.5 h-9">
-        <a
-            href="/"
-            class="bg-surface-primary flex items-center gap-1.5 border border-stroke shadow-glass backdrop-blur-raised-1 px-4 py-1.5 rounded-full hover:brightness-110 active:scale-[98%] transition-[filter,scale] duration-150 ease-out"
-        >
-            <LogoKOR />
-            <p class="body">KORHQ</p>
-        </a>
-        <div
-            class="bg-surface-primary border border-stroke shadow-glass backdrop-blur-raised-1 px-4 py-1.5 rounded-full"
-        >
-            <p class="body opacity-70">Open software for an better world</p>
-        </div>
+<nav class="sticky top-0 flex h-fit w-screen justify-between p-1.5">
+  <div class="flex h-9 gap-1.5">
+    <a
+      href="/"
+      class="bg-surface-primary border-stroke shadow-glass backdrop-blur-raised-1 flex items-center gap-1.5 rounded-full border px-4 py-1.5 transition-[filter,scale] duration-150 ease-out hover:brightness-110 active:scale-[98%]"
+    >
+      <LogoKOR />
+      <p class="body">KORHQ</p>
+    </a>
+    <div
+      class="bg-surface-primary border-stroke shadow-glass backdrop-blur-raised-1 rounded-full border px-4 py-1.5"
+    >
+      <p class="body opacity-70">Open software for an better world</p>
     </div>
+  </div>
 
-    <div class="flex gap-1.5 h-9">
-        <div
-            class="bg-surface-primary flex gap-3 border border-stroke shadow-glass backdrop-blur-raised-1 px-4 py-1.5 rounded-full"
-        >
-            <a href="/" class="body hover:font-bold duration-200 ease-out">
-                Home
-            </a>
-            <a
-                href="/handbook"
-                class="body hover:font-bold duration-200 ease-out"
-            >
-                Handbook
-            </a>
-            <a href="/about" class="body hover:font-bold duration-200 ease-out">
-                About
-            </a>
-            <a href="/blog" class="body hover:font-bold duration-200 ease-out">
-                Blog
-            </a>
-            <a
-                href="/contact"
-                class="body hover:font-bold duration-200 ease-out"
-            >
-                Contact
-            </a>
-        </div>
-        <Button class="h-full px-3 flex gap-1">Donate <IconHeart /></Button>
+  <div class="flex h-9 gap-1.5">
+    <div
+      class="bg-surface-primary border-stroke shadow-glass backdrop-blur-raised-1 flex gap-3 rounded-full border px-4 py-1.5"
+    >
+      <a href="/" class="body duration-200 ease-out hover:font-bold"> Home </a>
+      <a href="/handbook" class="body duration-200 ease-out hover:font-bold">
+        Handbook
+      </a>
+      <a href="/about" class="body duration-200 ease-out hover:font-bold">
+        About
+      </a>
+      <a href="/blog" class="body duration-200 ease-out hover:font-bold">
+        Blog
+      </a>
+      <a href="/contact" class="body duration-200 ease-out hover:font-bold">
+        Contact
+      </a>
     </div>
+    <Button class="flex h-full gap-1 px-3">Donate <IconHeart /></Button>
+  </div>
 </nav>

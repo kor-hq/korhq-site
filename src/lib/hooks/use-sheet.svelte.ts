@@ -16,7 +16,7 @@ export function useSheet() {
       className?: string;
       onClose?: () => void;
       id?: string;
-    },
+    }
   ) {
     return sheetManager.open({
       component,

@@ -10,23 +10,20 @@ const { title } = Astro.props;
 
 <!doctype html>
 <html lang="en" class="dark">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta property="og:title" content={`${title} | KOR HQ`} />
-        <meta
-            property="og:description"
-            content="Open tools for an better world"
-        />
-        <meta name="description" content="Open tools for an better world" />
-        <meta property="og:image" content="/social-banner.png" />
-        <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png" />
-        <meta name="generator" content={Astro.generator} />
-        <title>{title} | KOR HQ</title>
-    </head>
-    <body class="bg-bg text-text font-sans">
-        <Nav />
-        <slot />
-        <SheetContainer client:load />
-    </body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:title" content={`${title} | KOR HQ`} />
+    <meta property="og:description" content="Open tools for an better world" />
+    <meta name="description" content="Open tools for an better world" />
+    <meta property="og:image" content="/social-banner.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title} | KOR HQ</title>
+  </head>
+  <body class="bg-bg text-text font-sans">
+    <Nav />
+    <slot />
+    <SheetContainer client:load />
+  </body>
 </html>
