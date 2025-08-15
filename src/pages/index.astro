@@ -8,10 +8,13 @@ import { LogoBibleio } from "@korhq/ui/logo-bibleio";
 import { LogoKorUI } from "@korhq/ui/logo-korui";
 import { LogoUnDocs } from "@korhq/ui/logo-undocs";
 import { LogoAlive } from "@korhq/ui/logo-alive";
+
+import SheetTestButton from "../components/SheetTestButton.svelte";
 ---
 
 <Layout title="Home">
     <main class="p-8 pt-4 flex flex-col gap-2">
+        <SheetTestButton client:load />
         <h3 class="title-3">Projects</h3>
         <div class="grid grid-cols-5 aspect-[5/1] w-full h-auto gap-1.5">
             <ProjectCard label="Bibleio">
@@ -29,8 +32,8 @@ import { LogoAlive } from "@korhq/ui/logo-alive";
             <ProjectCard label="Slate">
                 <svg
                     width="36"
-                    height="37"
-                    viewBox="0 0 36 37"
+                    height="36"
+                    viewBox="0 0 36 36"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
                     class="fill-text"

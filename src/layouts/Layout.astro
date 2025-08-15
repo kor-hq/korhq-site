@@ -3,6 +3,7 @@ import "../styles/global.css";
 import "@fontsource-variable/outfit";
 import Footer from "../components/Footer.astro";
 import Nav from "../components/Nav.svelte";
+import SheetContainer from "$lib/components/ui/sheet/sheet-container.svelte";
 
 const { title } = Astro.props;
 ---
@@ -26,5 +27,6 @@ const { title } = Astro.props;
     <body class="bg-bg text-text font-sans">
         <Nav />
         <slot />
+        <SheetContainer client:load />
     </body>
 </html>
