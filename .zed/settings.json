@@ -12,6 +12,44 @@
       "settings": {
         "classFunctions": ["cva", "cx", "tv"]
       }
+    },
+    "eslint": {
+      "settings": {
+        "workingDirectories": [{ "mode": "auto" }],
+        "validate": [
+          "javascript",
+          "javascriptreact",
+          "typescript",
+          "typescriptreact",
+          "svelte",
+          "astro"
+        ],
+        "experimental": {
+          "useFlatConfig": true
+        }
+      }
+    }
+  },
+  "languages": {
+    "JavaScript": {
+      "code_actions_on_format": {
+        "source.fixAll.eslint": true
+      }
+    },
+    "TypeScript": {
+      "code_actions_on_format": {
+        "source.fixAll.eslint": true
+      }
+    },
+    "Astro": {
+      "code_actions_on_format": {
+        "source.fixAll.eslint": true
+      }
+    },
+    "Svelte": {
+      "code_actions_on_format": {
+        "source.fixAll.eslint": true
+      }
     }
   }
 }
